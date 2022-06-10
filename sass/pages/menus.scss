@@ -1,0 +1,83 @@
+.menu {
+    background-color: $background-light;
+    padding: 25px 15px 0px 15px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin-top: -40px;
+    position: relative;
+        
+    &__title {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .gradiant-btn {
+        padding: 15px 45px;
+        margin-top: 25px;
+    }
+}
+
+.submenus {
+    margin-bottom: 30px;
+
+    &__title {
+        position: relative;
+        padding-bottom: 8px;
+    }
+
+    &__title::after {
+        content: "";
+        background-color: $color-tertiary;
+        width: 40px;
+        height: 3px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    
+    &__list {
+        line-height: 18px;
+    }
+
+    &__items {
+        padding: 12px 10px 12px 10px ;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+}
+
+.dish__price {
+    font-size: 14px;
+    font-weight: 700;
+    color: $background-dark;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 750px) {
+    .submenus-wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .submenus {
+        width: 35%;
+        margin-right: 20px;
+
+        &__list {
+            justify-content: center;
+        }
+        
+    }
+}
