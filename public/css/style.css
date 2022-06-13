@@ -133,8 +133,20 @@ ul {
 }
 .footer__list {
   line-height: 25px;
+  display: block;
 }
 
+@media screen and (min-width: 600px) {
+  .footer h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .intro {
   text-align: center;
   background-color: #F6F6F6;
@@ -245,7 +257,7 @@ ul {
   .operation__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 51px;
   }
   .operation__cards {

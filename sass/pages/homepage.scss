@@ -116,15 +116,12 @@
     }
 }
 
-
-
-
 @media screen and (min-width: 600px) {
     .operation {
         &__list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             padding-left: 51px;
         }
 
@@ -140,7 +137,6 @@
         }
     }
 }
-   
 
 @media screen and (min-width: 700px) {
     .restaurants {
