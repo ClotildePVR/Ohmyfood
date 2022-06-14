@@ -60,6 +60,10 @@
     &__cards:hover {
         background-color: lighten($color-primary, 35%);
         cursor: pointer;
+
+        & i {
+            color: $color-primary;
+        }
     }
 
     &__cards::before {

@@ -1,3 +1,16 @@
 .cards__icon {
     font-size: 22px;
+    color: #000;
+    background-color: #fff;
+
+    &::before {
+        content: "\f004";
+        transition: color 0.5s ease-out;
+    }
+
+    &:hover::before {
+        font-weight: bold;
+        color: blue;
+        cursor: pointer;
+    }
 }

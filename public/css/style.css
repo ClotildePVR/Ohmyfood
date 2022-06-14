@@ -80,6 +80,17 @@ ul {
 
 .cards__icon {
   font-size: 22px;
+  color: #000;
+  background-color: #fff;
+}
+.cards__icon::before {
+  content: "\f004";
+  transition: color 0.5s ease-out;
+}
+.cards__icon:hover::before {
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
 }
 
 .loader {
@@ -264,6 +275,9 @@ ul {
 .operation__cards:hover {
   background-color: #f2eafb;
   cursor: pointer;
+}
+.operation__cards:hover i {
+  color: #9356DC;
 }
 .operation__cards::before {
   counter-increment: countli;
