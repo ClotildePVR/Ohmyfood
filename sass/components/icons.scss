@@ -10,7 +10,6 @@
 
     &:hover::before {
         font-weight: bold;
-        color: blue;
-        cursor: pointer;
+        color: $color-primary;
     }
 }
