@@ -89,8 +89,7 @@ ul {
 }
 .cards__icon:hover::before {
   font-weight: bold;
-  color: blue;
-  cursor: pointer;
+  color: #9356DC;
 }
 
 .loader {
