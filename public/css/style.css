@@ -82,14 +82,23 @@ ul {
   font-size: 22px;
   color: #000;
   background-color: #fff;
+  cursor: pointer;
 }
 .cards__icon::before {
   content: "\f004";
-  transition: color 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 .cards__icon:hover::before {
   font-weight: bold;
-  color: #9356DC;
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.menu .cards__icon {
+  background-color: #F6F6F6;
 }
 
 .loader {
@@ -412,15 +421,19 @@ ul {
   margin-bottom: 15px;
   animation: showitems 1s forwards;
   opacity: 0;
+  cursor: pointer;
 }
-.submenus__items:nth-child(2) {
+.submenus__items:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.submenus__items:nth-of-type(2) {
   animation-delay: 0.2s;
 }
-.submenus__items:nth-child(3) {
-  animation-delay: 0.4s;
+.submenus__items:nth-of-type(3) {
+  animation-delay: 0.3s;
 }
-.submenus__items:nth-child(4) {
-  animation-delay: 0.6s;
+.submenus__items:nth-of-type(4) {
+  animation-delay: 0.3s;
 }
 
 @keyframes showitems {
@@ -465,6 +478,18 @@ ul {
   }
   .submenus__list {
     justify-content: center;
+  }
+  .submenus__items:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .submenus__items:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .submenus__items:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .submenus__items:nth-child(5) {
+    animation-delay: 0.5s;
   }
 }
 

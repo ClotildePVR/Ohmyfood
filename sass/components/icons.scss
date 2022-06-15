@@ -2,14 +2,23 @@
     font-size: 22px;
     color: #000;
     background-color: #fff;
+    cursor: pointer;
 
     &::before {
         content: "\f004";
-        transition: color 0.5s ease-out;
+        transition: all 0.3s ease-out;
     }
 
     &:hover::before {
         font-weight: bold;
-        color: $color-primary;
+        background: linear-gradient(0deg, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
     }
+}
+
+.menu .cards__icon {
+    background-color: $background-light;
 }
