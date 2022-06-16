@@ -472,6 +472,10 @@ ul {
     justify-content: space-between;
   }
 
+  .menu__title {
+    padding: 0px 25px;
+  }
+
   .submenus {
     width: 35%;
     padding: 0px 10px 0px 10px;

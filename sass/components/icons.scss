@@ -11,7 +11,7 @@
 
     &:hover::before {
         font-weight: bold;
-        background: linear-gradient(0deg, #FF79DA, #9356DC);
+        background: linear-gradient(0deg, $color-secondary, $color-primary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-background-clip: text;
