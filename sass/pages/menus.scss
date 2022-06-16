@@ -48,10 +48,12 @@
     }
 
     &__items {
-        padding: 12px 10px 12px 10px ;
+        padding: 0px;
         background-color: #fff;
         display: flex;
+        /*
         justify-content: space-between;
+        */
         margin-bottom: 15px;
         animation: showitems 1s forwards;
         opacity: 0;
@@ -88,9 +90,13 @@
 }
 
 .cards__txt {
+    width: 100%;
+    padding: 12px 22px 12px 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 
     & h3, p {
         white-space: nowrap;

@@ -161,6 +161,29 @@ ul {
   }
 }
 
+.checkbox {
+  background-color: #99E2D0;
+  width: 75px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox__circle {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox__icon {
+  color: #99E2D0;
+  font-size: 14px;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -414,10 +437,12 @@ ul {
   line-height: 18px;
 }
 .submenus__items {
-  padding: 12px 10px 12px 10px;
+  padding: 0px;
   background-color: #fff;
   display: flex;
+  /*
   justify-content: space-between;
+  */
   margin-bottom: 15px;
   animation: showitems 1s forwards;
   opacity: 0;
@@ -447,9 +472,13 @@ ul {
   }
 }
 .cards__txt {
+  width: 100%;
+  padding: 12px 22px 12px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 .cards__txt h3, .cards__txt p {
   white-space: nowrap;
