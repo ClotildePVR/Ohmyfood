@@ -2,12 +2,6 @@ body {
   margin: 0px;
 }
 
-.template-cards {
-  border-radius: 15px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 25px;
-}
-
 img {
   object-fit: cover;
 }
@@ -182,6 +176,12 @@ ul {
 .checkbox__icon {
   color: #99E2D0;
   font-size: 14px;
+}
+
+.template-cards {
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
 }
 
 .header {
@@ -486,6 +486,12 @@ ul {
   overflow: hidden;
 }
 
+.txt--nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .dish__price {
   font-size: 14px;
   font-weight: 700;
@@ -496,7 +502,7 @@ ul {
 }
 
 @media screen and (min-width: 1080px) {
-  .submenus-wrap {
+  .submenus--wrap {
     display: flex;
     justify-content: space-between;
   }
@@ -506,8 +512,7 @@ ul {
   }
 
   .submenus {
-    width: 35%;
-    padding: 0px 10px 0px 10px;
+    width: 32%;
   }
   .submenus__list {
     justify-content: center;

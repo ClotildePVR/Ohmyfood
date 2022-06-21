@@ -105,6 +105,12 @@
     }
 }
 
+.txt--nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .dish__price {
     font-size: 14px;
     font-weight: 700;
@@ -115,7 +121,7 @@
 }
 
 @media screen and (min-width: 1080px) {
-    .submenus-wrap {
+    .submenus--wrap {
         display: flex;
         justify-content: space-between;
     }
@@ -125,8 +131,7 @@
     }
     
     .submenus {
-        width: 35%;
-        padding: 0px 10px 0px 10px;
+        width: 32%;
 
         &__list {
             justify-content: center;
