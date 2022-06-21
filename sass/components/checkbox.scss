@@ -1,11 +1,13 @@
 .checkbox {
     background-color: $color-tertiary;
-    width: 75px;
+    width: 70px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: -70px;
+    transition-duration: 0.75s;
 
     &__circle {
         background-color: #fff;
@@ -22,3 +24,13 @@
         font-size: 14px;
     }
 }
+
+.submenus__items:hover .checkbox {
+    margin-right: 0px;
+
+    &__circle {
+        transition-duration: 0.75s;
+        transform: rotate(360deg);
+    }
+}
+

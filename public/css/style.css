@@ -157,12 +157,14 @@ ul {
 
 .checkbox {
   background-color: #99E2D0;
-  width: 75px;
+  width: 70px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -70px;
+  transition-duration: 0.75s;
 }
 .checkbox__circle {
   background-color: #fff;
@@ -176,6 +178,14 @@ ul {
 .checkbox__icon {
   color: #99E2D0;
   font-size: 14px;
+}
+
+.submenus__items:hover .checkbox {
+  margin-right: 0px;
+}
+.submenus__items:hover .checkbox__circle {
+  transition-duration: 0.75s;
+  transform: rotate(360deg);
 }
 
 .template-cards {
@@ -440,13 +450,11 @@ ul {
   padding: 0px;
   background-color: #fff;
   display: flex;
-  /*
-  justify-content: space-between;
-  */
   margin-bottom: 15px;
   animation: showitems 1s forwards;
   opacity: 0;
   cursor: pointer;
+  overflow: hidden;
 }
 .submenus__items:nth-of-type(1) {
   animation-delay: 0.1s;
