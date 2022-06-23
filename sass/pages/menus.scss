@@ -162,6 +162,11 @@
 
     .menu__title {
         padding: 0px 25px;
+        justify-content: center;
+
+        & h1 {
+            padding: 10px 30px;
+        }
     }
     
     .submenus {

@@ -74,22 +74,20 @@ ul {
 }
 
 .cards__icon {
-  font-size: 22px;
+  font-size: 24px;
   color: #000;
-  background-color: #fff;
+  transition: all 0.2s ease-out;
   cursor: pointer;
 }
-.cards__icon::before {
-  content: "\f004";
-  transition: all 0.3s ease-out;
-}
-.cards__icon:hover::before {
+.cards__icon:hover {
   font-weight: bold;
   background: linear-gradient(0deg, #FF79DA, #9356DC);
+  color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .menu .cards__icon {
@@ -558,6 +556,10 @@ ul {
 
   .menu__title {
     padding: 0px 25px;
+    justify-content: center;
+  }
+  .menu__title h1 {
+    padding: 10px 30px;
   }
 
   .submenus {
